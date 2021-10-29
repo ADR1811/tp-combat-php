@@ -1,0 +1,55 @@
+#Titre{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.lignePerso{
+    display: grid;
+    grid-template-columns: repeat(5, 130px);
+    grid-auto-rows: minmax(50px, auto);
+    border: 3px solid black;
+    border-bottom: 0;
+    text-decoration: none;
+    color: black;
+    /* border-top:3px solid black; */
+}
+.lignePerso:hover{
+    font-size: 30px;
+}
+.lignePerso:nth-last-child(-n+1){
+    border-bottom: 3px solid black;
+}
+
+.lignePerso>div:nth-child(1){
+   grid-column: 1;
+   font-weight: bold;
+}
+
+.lignePerso>div:nth-child(2){
+    grid-column: 2;
+ }
+
+.lignePerso>div:nth-child(3){
+grid-column: 3;
+}
+
+.lignePerso>div:nth-child(4){
+grid-column: 4;
+}
+
+.lignePerso>div:nth-child(5){
+grid-column: 5;
+}
+
+.NamePerso{
+    font-size: 40px;
+}
+
+#LesPerso{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
